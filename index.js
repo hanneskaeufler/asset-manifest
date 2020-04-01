@@ -8,7 +8,7 @@ function createMixManifest(assetsDir, fileToBeCreated) {
   let manifest = {};
 
   for (let file of files) {
-    manifest[file] = file + "?id=" + hashFile(file);
+    manifest[file.assetPath] = file.assetPath + "?id=" + hashFile(file);
   }
 
   fs.writeFileSync(fileToBeCreated, JSON.stringify(manifest));

@@ -8,18 +8,24 @@ test("it finds toplevel js/png/svg/... files", (t) => {
 
   t.deepEqual(
     ["/image.png", "/logo.svg", "/stylesheet.css", "/script.js"].sort(),
-    files
+    files.map((f) => f.assetPath)
   );
 });
 
 test("it ignores folders", (t) => {
   const files = findAssetFiles(path.join(helper.FIXTURES_DIR, "folders"));
 
-  t.deepEqual([], files);
+  t.deepEqual(
+    [],
+    files.map((f) => f.assetPath)
+  );
 });
 
 test("it finds file in nested folder", (t) => {
   const files = findAssetFiles(path.join(helper.FIXTURES_DIR, "nested"));
 
-  t.deepEqual(["/logos/corp.svg"], files);
+  t.deepEqual(
+    ["/logos/corp.svg"],
+    files.map((f) => f.assetPath)
+  );
 });

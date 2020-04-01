@@ -1,8 +1,12 @@
 {
   "name": "assets-manifest",
   "version": "1.0.0",
-  "description": "A tiny assets manifest generator for the lucky framework",
+  "description": "A tiny assets manifest generator for the lucky framework, as an alternative to laravel-mix.",
   "main": "index.js",
+  "repository": {
+      "type": "git",
+      "url": "git@github.com:hanneskaeufler/asset-manifest.git"
+  },
   "scripts": {
     "check": "prettier --check **/*.js",
     "test": "ava"

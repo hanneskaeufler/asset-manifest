@@ -1,6 +1,6 @@
 const path = require("path");
 const test = require("ava");
-const helper = require("../helper.js");
+const helper = require("../helpers/helper.js");
 const findAssetFiles = require("../../lib/findAssetFiles");
 
 test("it finds toplevel js/png/svg/... files", (t) => {

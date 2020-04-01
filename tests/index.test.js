@@ -1,4 +1,4 @@
-const helper = require("./helper.js");
+const helper = require("./helpers/helper.js");
 const path = require("path");
 const fs = require("fs");
 const test = require("ava");
@@ -22,7 +22,7 @@ test("the created file has an entry for each asset file in the given assets fold
     const fileContent = fs.readFileSync(target);
     t.deepEqual(
       {
-        "/assets/main.css": "...",
+        "/main.css": "..",
       },
       JSON.parse(fileContent)
     );

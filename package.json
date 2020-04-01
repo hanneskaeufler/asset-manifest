@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "check": "prettier --check **/*.js",
-    "test": "ava tests/**/*.test.js"
+    "test": "ava"
   },
   "author": "Hannes Kaeufler <hannes.kaeufler@gmail.com>",
   "license": "MIT",

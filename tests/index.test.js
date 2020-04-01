@@ -22,7 +22,7 @@ test("the created file has an entry for each asset file in the given assets fold
     const fileContent = fs.readFileSync(target);
     t.deepEqual(
       {
-        "/main.css": "..",
+        "/main.css": "/main.css?id=foobar",
       },
       JSON.parse(fileContent)
     );

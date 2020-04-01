@@ -7,7 +7,7 @@ function createMixManifest(assetsDir, fileToBeCreated) {
   let manifest = {};
 
   for (let file of files) {
-    manifest[file] = "..";
+    manifest[file] = file + "?id=foobar";
   }
 
   fs.writeFileSync(fileToBeCreated, JSON.stringify(manifest));

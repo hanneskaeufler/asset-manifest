@@ -1,0 +1,14 @@
+{
+  "name": "assets-manifest",
+  "version": "1.0.0",
+  "description": "A tiny assets manifest generator for the lucky framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "author": "Hannes Kaeufler <hannes.kaeufler@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^3.5.2"
+  }
+}

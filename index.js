@@ -1,13 +1,14 @@
 const fs = require("fs");
 const path = require("path");
 const findAssetFiles = require("./lib/findAssetFiles.js");
+const hashFile = require("./lib/hashFile.js");
 
 function createMixManifest(assetsDir, fileToBeCreated) {
   const files = findAssetFiles(assetsDir);
   let manifest = {};
 
   for (let file of files) {
-    manifest[file] = file + "?id=foobar";
+    manifest[file] = file + "?id=" + hashFile(file);
   }
 
   fs.writeFileSync(fileToBeCreated, JSON.stringify(manifest));

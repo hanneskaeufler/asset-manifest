@@ -4,7 +4,7 @@
   "description": "A tiny assets manifest generator for the lucky framework",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "test": "ava tests/*.test.js"
   },
   "author": "Hannes Kaeufler <hannes.kaeufler@gmail.com>",
   "license": "MIT",

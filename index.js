@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 function createMixManifest(assetsDir, fileToBeCreated) {
-    fs.writeFileSync(fileToBeCreated, '{"/assets/main.css": "..."}');
+  fs.writeFileSync(fileToBeCreated, '{"/assets/main.css": "..."}');
 }
 
 // 0    1        2         3

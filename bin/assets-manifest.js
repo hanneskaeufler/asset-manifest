@@ -1,5 +1,7 @@
+#!/usr/bin/env node
+
 const fs = require("fs");
-const findAssetFiles = require("./lib/findAssetFiles.js");
+const findAssetFiles = require("../lib/findAssetFiles.js");
 
 function createMixManifest(assetsDir, fileToBeCreated) {
   const files = findAssetFiles(assetsDir);

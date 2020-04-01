@@ -13,7 +13,7 @@ const inTempDir = (fn) => {
 };
 
 const createMixManifest = (assetsDir, manifestFile) => {
-  prcs.execFileSync("node", ["index.js", assetsDir, manifestFile]);
+  prcs.execFileSync("./bin/assets-manifest.js", [assetsDir, manifestFile]);
 };
 
 module.exports.ASSETS_FILE_NAME = ASSETS_FILE_NAME;
